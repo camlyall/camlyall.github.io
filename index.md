@@ -3,13 +3,17 @@ title: Home
 layout: home
 ---
 
-## Welcome to my notes
+# Welcome Web Surfer!
 
-Hi!. I'm Camlyall, have you tried turning it off and on again?
+<br/>
+
+I'm camlyall, creator of this here site. Before you go any further, have you tried turning it off and on again? No, seriously...
 
 Welcome to my notes. Hopefully they can be of some use to you. Here, I will store various notes and instructions that I use regularly. By the time you are seeing this they are likely out of date. I take no reponsiblility if these instructions make things worse 😁. Good luck.
 
-### A quote from my favourite movie
+<br/>
+
+## A quote from my favourite movie
 *"Our deepest fear is not that we are inadequate,
 Our deepest fear is that we are powerful beyond measure.*
 
@@ -27,3 +31,11 @@ other people permission to do the same.*
 
 *As we are liberated from our fear,
 our presence automatically liberates others."*
+― Marianne Williamson
+
+<br/>
+<br/>
+
+[Buy me a coffee!](https://www.buymeacoffee.com/camlyall)
+
+Last Modified: {% last_modified_at %}

@@ -1,8 +1,15 @@
 title: camlyall
 description: Just notes for things that I do.
 theme: just-the-docs
+author: camlyall
 
 url: https://camlyall.github.io
 
 aux_links:
   camlyall on GitHub: "//github.com/camlyall"
+
+plugins:
+  - jekyll-last-modified-at
+
+last-modified-at:
+    date-format: '%d-%b-%y'
