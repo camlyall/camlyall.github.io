@@ -1,8 +1,8 @@
-# CamLyall's GitHub.io Pages
+# camlyall's GitHub.io Pages
 
 ## Welcome to my notes
 
-Hi!. I'm Camlyall, have you tried turning it off and on again?
+Hi!. I'm camlyall, have you tried turning it off and on again?
 
 Welcome to my notes. Hopefully they can be of some use to you. Here, I will store various notes and instructions that I use regularly. By the time you are seeing this they are likely out of date. I take no reponsiblility if these instructions make things worse 😁. Good luck.
 
