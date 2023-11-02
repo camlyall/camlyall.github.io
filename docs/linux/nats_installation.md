@@ -23,7 +23,7 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://github.com/nats-io/nats-server/releases/](https://github.com/nats-io/nats-server/releases/)
+* [https://github.com/nats-io/nats-server/releases/](https://github.com/nats-io/nats-server/releases/){:target="_blank"}
 
 ---
 

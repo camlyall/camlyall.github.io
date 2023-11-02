@@ -23,7 +23,7 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://redis.io/docs/getting-started/installation/install-redis-on-linux/](https://redis.io/docs/getting-started/installation/install-redis-on-linux/)
+* [https://redis.io/docs/getting-started/installation/install-redis-on-linux/](https://redis.io/docs/getting-started/installation/install-redis-on-linux/){:target="_blank"}
 
 ---
 

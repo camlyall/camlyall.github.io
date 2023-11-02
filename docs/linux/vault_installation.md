@@ -23,8 +23,8 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://developer.hashicorp.com/vault/docs/install](https://developer.hashicorp.com/vault/docs/install)
-* [https://developer.hashicorp.com/vault/downloads](https://developer.hashicorp.com/vault/downloads)
+* [https://developer.hashicorp.com/vault/docs/install](https://developer.hashicorp.com/vault/docs/install){:target="_blank"}
+* [https://developer.hashicorp.com/vault/downloads](https://developer.hashicorp.com/vault/downloads){:target="_blank"}
 
 ---
 

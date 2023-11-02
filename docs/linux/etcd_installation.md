@@ -23,7 +23,7 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://etcd.io/docs/v3.5/](https://etcd.io/docs/v3.5/)
+* [https://etcd.io/docs/v3.5/](https://etcd.io/docs/v3.5/){:target="_blank"}
 
 ---
 

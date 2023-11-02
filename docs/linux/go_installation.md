@@ -23,7 +23,7 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://go.dev/doc/install](https://go.dev/doc/install)
+* [https://go.dev/doc/install](https://go.dev/doc/install){:target="_blank"}
 
 ---
 
