@@ -165,3 +165,5 @@ sudo systemctl status mongod
 # Verify it's running on private IP
 sudo lsof -i -P -n | grep LISTEN
 ```
+
+---

@@ -4,7 +4,7 @@ title: Docker Installation
 parent: Linux
 ---
 
-# How to Install Lets Encrypt on Ubuntu
+# How to Install Docker on Ubuntu
 {: .no_toc }
 
 Last Modified: {% last_modified_at %}
@@ -23,8 +23,7 @@ Last Modified: {% last_modified_at %}
 ---
 
 ## Documentation
-* [https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)
-* [https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-use-certbot-standalone-mode-to-retrieve-let-s-encrypt-ssl-certificates-on-ubuntu-20-04)
+* [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 ---
 
@@ -33,52 +32,60 @@ Last Modified: {% last_modified_at %}
 {: .no_toc }
 {% include ubuntu_update.md %}
 
-### Install
+### Uninstall Conflicts
 {: .no_toc }
 ```bash
-sudo snap install core; sudo snap refresh core
-sudo apt remove certbot
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+```
+
+### Set Up Repository
+{: .no_toc }
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+
+### Install Latest
+{: .no_toc }
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 ---
 
-## Usage
-### Certificate Only
-#### Requires
-{: .no_toc }
-* FQDN
-* DNS A-Record pointing to instance pubic ip
-* Port 80 open
-
-#### Store FQDN
+## Post Installation
+### Add User to Docker Group
 {: .no_toc }
 ```bash
-FQDN=www.example.com
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
-#### Generate Certificate
+### Reload Group Membership
 {: .no_toc }
+Log out and log back in to re-evaluate group membership.
+
+Alternatively, activate the changes to group:
 ```bash
-sudo certbot certonly --standalone -d ${FQDN}
+newgrp docker
 ```
 
-#### Output:
+### Test
 {: .no_toc }
 ```bash
-Successfully received certificate.
-Certificate is saved at: /etc/letsencrypt/live/www.example.com/fullchain.pem
-Key is saved at: /etc/letsencrypt/live/www.example.com/privkey.pem
+docker version
+docker compose version
 ```
 
 ---
-
-## Renew Certificate
-```bash
-sudo certbot renew
-```
-```bash
-FQDN=www.example.com
-sudo certbot certonly -d ${FQDN} -n --standalone 
-```

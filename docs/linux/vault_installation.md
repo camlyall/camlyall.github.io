@@ -150,8 +150,10 @@ vault operator unseal -migrate
 
 ### Check
 {: .no_toc }
-The vault should unseal automatically or restart.
+The vault should unseal automatically on restart.
 ```bash
 sudo systemctl restart vault
 vault status
 ```
+
+---
