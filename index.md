@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 0
 ---
 
 # Welcome Web Surfer!
@@ -9,7 +10,7 @@ layout: home
 
 I'm camlyall, creator of this here site. Before you go any further, have you tried turning it off and on again? No, seriously...
 
-Welcome to my notes. Hopefully they can be of some use to you. Here, I will store various notes and instructions that I use regularly. By the time you are seeing this they are likely out of date. I take no reponsiblility if these instructions make things worse 😁. Good luck.
+Welcome to my notes. Hopefully they can be of some use to you. I have stored various notes and instructions that I use regularly. By the time you are seeing this they are likely out of date. I take no reponsiblility if these instructions make things worse 😁. Good luck.
 
 <br/>
 
