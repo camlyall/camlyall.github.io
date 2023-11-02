@@ -9,3 +9,7 @@ gem "just-the-docs", "0.6.2" # pinned to the current release
 group :jekyll_plugins do
     gem "jekyll-last-modified-at"
 end
+
+group :jekyll_plugins do
+    gem 'jekyll-spaceship'
+end

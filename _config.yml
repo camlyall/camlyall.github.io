@@ -10,6 +10,7 @@ aux_links:
 
 plugins:
   - jekyll-last-modified-at
+  - jekyll-spaceship
 
 last-modified-at:
     date-format: '%d-%b-%y'
