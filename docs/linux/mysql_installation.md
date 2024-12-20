@@ -57,6 +57,7 @@ exit
 mysql -u root -p
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+exit
 ```
 
 ```bash
